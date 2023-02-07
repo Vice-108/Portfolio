@@ -1,5 +1,4 @@
 import React from "react";
-
 import Logo from '../assets/name.svg';
 
 const Header = () => {
@@ -7,12 +6,12 @@ const Header = () => {
   <div className="py-8">
       <div className="container mx-auto" >
         <div className="flex justify-between item-center ">
-          { }
-          <a href="#">
-            <img  src={Logo} alt="" />
+          <a href="https://vice-108.github.io/Portfolio/">
+            <img  src={Logo} alt="Name Logo" />
           </a>
-          { }
-          <button className="btn btn-sm">Work with me</button>
+          <div>
+            <a href="../assets/resume.pdf" download className="btn btn-sm py-4">My Resume</a>
+          </div>
         </div>
       </div>
   </div>

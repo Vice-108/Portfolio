@@ -2,24 +2,25 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { BsArrowUpRight } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const services = [
   {
     name: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut optio ",
+      "I offer custom landing page design and development services to help my future clients (might be YOU) to increase their website traffic.",
     link: "Learn more",
   },
   {
-    name: "PSD To Design",
+    name: "Website Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut optio ",
+      "I offer full-stack web development services, including responsive design, implementation,and deployment. ",
     link: "Learn more",
   },
   {
-    name: "Digital Marketing",
+    name: "Web Application Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut optio ",
+      "I have experience developing dynamic and engaging web application using variety of languages and Frameworks.",
     link: "Learn more",
   },
 ];
@@ -39,15 +40,21 @@ const Services = () => {
           >
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I'm a Student and a Full-Stack Developer with no experience YET.
+              I'm a Student and a Full-Stack Developer, Constantly learning and
+              expanding my skillset.
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <Link to="work"  smooth={true}>
+              <button className="btn btn-sm">See my work</button>
+            </Link>
           </motion.div>
           {/* services */}
-          <motion.div variants={fadeIn("left", 0.2)}
+          <motion.div
+            variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }} className="flex-1">
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1"
+          >
             {/* service list */}
             <div>
               {services.map((service, index) => {
@@ -67,12 +74,15 @@ const Services = () => {
                     </div>
                     <div className=" flex flex-col flex-1 items-end">
                       <a
-                        href="#"
+                        href="https:www.github.com/Vice-108"
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
                       >
                         <BsArrowUpRight />
                       </a>
-                      <a href="#" className="text-gradient text-sm">
+                      <a
+                        href="https:www.github.com/Vice-108"
+                        className="text-gradient text-sm"
+                      >
                         {link}
                       </a>
                     </div>

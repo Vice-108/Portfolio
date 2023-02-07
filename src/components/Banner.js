@@ -4,6 +4,8 @@ import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
+
 
 const Banner = () => {
   return (
@@ -44,8 +46,6 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing
-              isdhvphsdiovoishdov oi oj oo sjodiujoiut jst
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.4)}
@@ -54,7 +54,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:ml-0 "
             >
-              <button className="btn btn-sm">Contact Me</button>
+             <Link to="contact" smooth={true}> <button className="btn btn-sm">Contact Me</button></Link>
               <a
                 className="text-gradient btn-link"
                 href="https://www.github.com/Vice-108"
@@ -70,13 +70,13 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:items-center lg:mx-0 lg:max-w-screen-lg"
             >
-              <a href="#">
+              <a href="https://www.github.com/Vice-108">
                 <FaGithub />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/vikas-kumar-singh-49a96025b/">
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/vicemark108">
                 <FaTwitter />
               </a>
             </motion.div>

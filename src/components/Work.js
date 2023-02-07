@@ -19,14 +19,12 @@ const Work = () => {
             <div>
               <h2 className=" h2 leading-tight text-anim">
                 My Latest <br />
-                Work.
+                Work ...
               </h2>
               <p className="max-w-sm mb-16">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                vero quis placeat amet consectetur adipisicing elit. Quam
-                vero quis placeat 
+                Displaying personal projects, showcasing my web development skills, including websites and web applications, with focus on delivering creative and simplistic solutions.  
               </p>
-              <button className="btn btn-sm">My Projects</button>
+              <a href="https://www.github.com/Vice-108" className="btn btn-sm py-5 px-8 ">My Projects</a>
             </div>
             {/* images */}
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
@@ -36,15 +34,15 @@ const Work = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img1}
-                alt=""
+                alt="Weather App"
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Weather App</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3-xl text-white">Etch-A-Sketch</span>
+                <span className="text-3-xl text-white">Live on >--> <a href="https://vice-108.github.io/Weather-App/">Here</a>  </span>
               </div>
             </div>
           </motion.div>
@@ -61,15 +59,15 @@ const Work = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img2}
-                alt=""
+                alt="Sorting Algorithm Visualizer"
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Sorting Algorithm Visualizer</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3-xl text-white">Etch-A-Sketch</span>
+                <span className="text-3-xl text-white">Live on >--> <a href=" https://vice-108.netlify.app/">Here</a></span>
               </div>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
@@ -79,15 +77,15 @@ const Work = () => {
               <img
                 className="group-hover:scale-125 transition-all duration-500"
                 src={Img3}
-                alt=""
+                alt="Etch-A-Sketch"
               />
               {/* pretitle */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                <span className="text-gradient">UI/UX Design</span>
+                <span className="text-gradient">Etch-A-Sketch</span>
               </div>
               {/* title */}
               <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                <span className="text-3-xl text-white">Etch-A-Sketch</span>
+                <span className="text-3-xl text-white">Live on >--> <a href="https://vice-108.github.io/Etch-a-Sketch/">Here</a></span>
               </div>
             </div>
           </motion.div>

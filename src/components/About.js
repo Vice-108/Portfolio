@@ -6,6 +6,8 @@ import { useInView } from "react-intersection-observer";
 
 import { motion } from "framer-motion";
 
+import { Link } from "react-scroll";
+
 import { fadeIn } from "../variants";
 
 const About = () => {
@@ -18,7 +20,7 @@ const About = () => {
         <div className=" lg:gap-y-10 lg:flex lg:flex-row lg:gap-x-20 lg:h-screen lg:items-center">
           {/* {img} */}
           <motion.div
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -26,7 +28,7 @@ const About = () => {
           ></motion.div>
           {/* text */}
           <motion.div
-            variants={fadeIn("left", 0.4)}
+            variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -34,12 +36,10 @@ const About = () => {
           >
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3 mb-4">
-              I'm a Student and a Full-Stack Developer with no experience YET.
+              Hi there! I'm beginner full-stack developer with a passion for building and creating web applications.
             </h3>
             <p className="mb-6">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-              velit eaque obcaecati accusantium expedita sit, commodi animi
-              neque modi aliquam eligendi veritatis
+              With a strong foundation in both front-end and back-end development (MERN), I am comfortable in various programming languages and framework. Despite having no corporate experience, I have honed my skills through personal projects.
             </p>
             {/* stats */}
             <div className="flex gap-x-7 lg:gap-x-10 mb-12">
@@ -72,7 +72,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-sm">Contact me</button>
+            <Link to="contact" smooth={true}> <button className="btn btn-sm">Contact Me</button></Link>
               <a
                 className="text-gradient btn-link"
                 href="https://www.github.com/Vice-108"
